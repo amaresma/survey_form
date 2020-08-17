@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <h1 id="title"> Survey Form </h1>
+    <p id="description"> Description of the survey form </p>
+    <form id="survey-form" action="/url-where-you-want-to-submit-form-data">
+        <label id="name-label" for="name"> Name </label>
+        <input id="name" type="text" name="name" placeholder="Full Name" required="">
+        <br>
+        <label id="email-label" for="email"> Email </label>
+        <input id="email" type="text" name="email" placeholder="name@whatever.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
+        <br>
+        <label id="number-label" for="number"> Age </label>
+        <input id="number" type="number" name="number" placeholder="18" pattern="\d*" min="18" max="100" required="">
+        <br>
+        <label for="dropdown" type="model"> Select Model </label>
+        <select name="dropdown" id="dropdown">
+            <option value="Model 1"> Model 1 </option>
+            <option value="Model 2"> Model 2 </option>
+            <option value="Model 3"> Model 3 </option>
+            <option value="Model 4"> Model 4 </option>
+            <option value="Model 5"> Model 5 </option>
+            <option value="Model 6"> Model 6 </option>
+        </select>
+        <br>
+        <br>
+        <label id="a" for="attribute1"><b> Attribute 1: </b></label>
+        <input id="attribute1" type="radio" name="attribute1" value="attribute1">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
