@@ -12,21 +12,21 @@
     <p id="description"> Send us your requirements and we'll build for you the computer you need.
     </p>
     <form id="survey-form" action="/url-where-you-want-to-submit-form-data">
-        <div>
+        <div class="input-headings">
             <label id="name-label" for="name"> Name </label>
-            <input id="name" type="text" name="name" placeholder="Full Name" required>
+            <input id="name" type="text" name="name" placeholder="Full Name" class="form-inputs" required>
             </input>
             <br>
             <label id="email-label" for="email"> Email </label>
-            <input id="email" type="email" name="email" placeholder="name@whatever.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <input id="email" type="email" name="email" placeholder="name@whatever.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-inputs" required>
             </input>
             <br>
             <label id="number-label" for="number"> Age </label>
-            <input id="number" type="number" name="number" placeholder="14" pattern="\d*" min="14" max="100" required>
+            <input id="number" type="number" name="number" placeholder="14" pattern="\d*" min="14" max="100" class="form-inputs" required>
             </input>
             <br>
             <label for="dropdown" type="model"> Select CPU Model </label>
-            <select name="dropdown" id="dropdown">
+            <select name="dropdown" id="dropdown" class="form-inputs">
                 <option value="Model 1"> Intel Core i5 10600K </option>
                 <option value="Model 2"> AMD Ryzen 9 3950X </option>
                 <option value="Model 3"> AMD Ryzen 7 3700X </option>
@@ -35,19 +35,15 @@
                 <option value="Model 6"> AMD Ryzen 5 3400G </option>
             </select>
             <br>
-        </div>
-        <div>
             <br>
             <label id="usage_purpose" for="usage_purpose"> <b>Usage Purpose: </b></label>
             
             <input id="usage_purpose" id="gaming" type="radio" name="purpose" value="gaming">
             <label for="usage_purpose"><b>Gaming</b></label>
-            <br>
+            
             <input id="usage_purpose" id="workstation" type="radio" name="purpose" value="workstation">
             <label for="usage_purpose"><b>Workstation</b></label>
             <br>
-        </div>
-        <div>
             <br>
             <label for="features">Upgrade features: </label>
             <br>
@@ -63,16 +59,12 @@
             <input id="checkbox" type="checkbox" name="features" value="fan">
             <label for="checkbox">CPU Liquid Cooler</label>
             <br>
-        </div>
-        <div>
             <br>
             <label id="textarea" for="">Additional Comments</label>
             <br>
             <textarea id="textarea" name="instructions" id="" cols="40" rows="5"></textarea>
             <br>
-        </div>
-        <div>
-            <input id="submit" type="submit" value="Submit">
+            <input id="submit" type="submit" value="Submit" class="submit-button" >
         </div>
     </form>
 </body>
