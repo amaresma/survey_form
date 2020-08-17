@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
@@ -14,13 +14,16 @@
     <form id="survey-form" action="/url-where-you-want-to-submit-form-data">
         <div>
             <label id="name-label" for="name"> Name </label>
-            <input id="name" type="text" name="name" placeholder="Full Name" required="">
+            <input id="name" type="text" name="name" placeholder="Full Name" required>
+            </input>
             <br>
             <label id="email-label" for="email"> Email </label>
-            <input id="email" type="text" name="email" placeholder="name@whatever.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
+            <input id="email" type="email" name="email" placeholder="name@whatever.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </input>
             <br>
             <label id="number-label" for="number"> Age </label>
-            <input id="number" type="number" name="number" placeholder="18" pattern="\d*" min="18" max="100" required="">
+            <input id="number" type="number" name="number" placeholder="14" pattern="\d*" min="14" max="100" required>
+            </input>
             <br>
             <label for="dropdown" type="model"> Select CPU Model </label>
             <select name="dropdown" id="dropdown">
@@ -49,26 +52,28 @@
             <label for="features">Upgrade features: </label>
             <br>
             <input id="checkbox" type="checkbox" name="features" value="ram">
-            <label for="checkbox">RAM</label>
+            <label for="checkbox">16GB RAM</label>
             <br>
             <input id="checkbox" type="checkbox" name="features" value="hd">
-            <label for="checkbox">Hard Drive</label>
+            <label for="checkbox">M.2 PCIe SSD Hard Drive</label>
             <br>
             <input id="checkbox" type="checkbox" name="features" value="graphics">
-            <label for="checkbox">Graphics</label>
+            <label for="checkbox">NVIDIA GeForce Graphics</label>
             <br>
             <input id="checkbox" type="checkbox" name="features" value="fan">
-            <label for="checkbox">CPU Fan</label>
+            <label for="checkbox">CPU Liquid Cooler</label>
             <br>
         </div>
         <div>
-        <br>
-        <label id="textarea" for="">Additional Comments</label>
-        <br>
-        <textarea id="textarea" name="instructions" id="" cols="40" rows="5"></textarea>
+            <br>
+            <label id="textarea" for="">Additional Comments</label>
+            <br>
+            <textarea id="textarea" name="instructions" id="" cols="40" rows="5"></textarea>
+            <br>
         </div>
-        <br>
-        <input type="submit">
+        <div>
+            <input id="submit" type="submit" value="Submit">
+        </div>
     </form>
 </body>
 </html>
