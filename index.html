@@ -8,11 +8,13 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
-    <h1 id="title"> PC Builder </h1>
-    <p id="description"> Send us your requirements and we'll build for you the computer you need.
-    </p>
-    <form id="survey-form" action="/url-where-you-want-to-submit-form-data">
-        <div class="input-headings">
+    <div class="center">
+        <h1 id="title"> PC Builder </h1>
+        <p id="description"> Send us your requirements and we'll build for you the computer you need.
+        </p>
+    </div>
+    <div class="input-headings">
+        <form id="survey-form" action="/url-where-you-want-to-submit-form-data">
             <label id="name-label" for="name"> Name </label>
             <input id="name" type="text" name="name" placeholder="Full Name" class="form-inputs" required>
             </input>
@@ -37,10 +39,8 @@
             <br>
             <br>
             <label id="usage_purpose" for="usage_purpose"> <b>Usage Purpose: </b></label>
-            
             <input id="usage_purpose" id="gaming" type="radio" name="purpose" value="gaming">
             <label for="usage_purpose"><b>Gaming</b></label>
-            
             <input id="usage_purpose" id="workstation" type="radio" name="purpose" value="workstation">
             <label for="usage_purpose"><b>Workstation</b></label>
             <br>
@@ -65,7 +65,7 @@
             <textarea id="textarea" name="instructions" id="" cols="40" rows="5"></textarea>
             <br>
             <input id="submit" type="submit" value="Submit" class="submit-button">
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>

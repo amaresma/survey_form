@@ -3,9 +3,9 @@
 body {
     font-family: 'Patrick Hand';
     line-height: 1.4;
-    /* background-color: #d7dcdd; */ 
-    width: 500px;
     margin: auto;
+    display: block;
+    /* background-color: #d7dcdd; */
 }
 
 form {
@@ -15,6 +15,12 @@ form {
     border-radius: 2rem;
     width: 500px;
     margin: auto;
+}
+
+@media screen and (max-width: 600px){
+    form {
+        width: 400px;
+    }
 }
 
 .submit-button {
@@ -31,14 +37,20 @@ form {
 .input-headings {
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem;
+    vertical-align: middle;
 }
 
 .form-inputs {
-    display: block;
+    margin: auto;
+
     width: 90%;
     height: 2rem;
     padding: 0.25rem 0.75rem;
     background-color: #fff;
     border: 1px solid #ced4da;
-    border-radius: 0.25rem; 
+    border-radius: 0.25rem;
+}
+
+.center {
+    text-align: center;
 }
